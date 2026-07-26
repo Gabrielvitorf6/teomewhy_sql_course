@@ -1,0 +1,28 @@
+-- LISTA DOS 10 CLIENTES COM MAIS PONTOS
+
+-- SELECT idCliente,
+--         qtdePontos
+-- from clientes
+-- order by qtdePontos DESC
+-- LIMIT 10;
+
+-- LISTA DOS CLIENTES MAIS ANTIGOS CADASTRADOS, COM QUNATIDADE DE PONTOS COMO CRITÉRIO DE DESEMPATE 
+
+-- SELECT idCliente,
+--         DtCriacao,
+--         qtdePontos
+-- FROM clientes
+-- ORDER by DtCriacao ASC, qtdePontos DESC
+
+-- LISTA DOS CLIENTES MAIS ANTIGOS CADASTRADOS E QUE TEM TWITCH, COM QUANTIDADE DE PONTOS COMO CRITÉRIO DE DESEMPATE 
+
+SELECT idCliente,
+        DtCriacao,
+        qtdePontos,
+        flTwitch
+
+FROM clientes
+
+WHERE flTwitch = 1
+
+ORDER by DtCriacao ASC, qtdePontos DESC
