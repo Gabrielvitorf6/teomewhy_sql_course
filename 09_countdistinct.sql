@@ -1,3 +1,5 @@
+-- A CLAUSULA DISTINCT RETORNA VALORES DISTINTOS DENTRO DE UMA COLUNA
+
 -- Quantas transações que aconteceram em JULHO de 2025
 
 SELECT

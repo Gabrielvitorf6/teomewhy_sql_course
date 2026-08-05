@@ -1,5 +1,6 @@
--- 10 Usuários com mais pontos E QUE TEM MAIS DE 4000 pontos em JULHO de 2025
+-- O HAVING FILTRA RESULTADOS APÓS O GROUP BY. É A CLAUSULA WHERE PORÉM PARA DADOS AGRUPADOS
 
+-- 10 Usuários com mais pontos E QUE TEM MAIS DE 4000 pontos em JULHO de 2025
 
 SELECT idCliente,
         SUM(qtdePontos) as qtdePontosJulho,

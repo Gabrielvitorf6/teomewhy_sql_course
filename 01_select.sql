@@ -1,4 +1,5 @@
+-- O COMANDO SELECT SELECIONA COLUNAS DE UMA TABELA. USAR O SELECT * SELECIONA TODAS AS COLUNAS DE UMA OU MAIS TABELAS
+
 select *
  from produtos
  limit 5 
- --isso não é executado

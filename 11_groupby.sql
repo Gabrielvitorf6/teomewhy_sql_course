@@ -1,10 +1,12 @@
+/* GROUP BY agrega informação para cada valor dentro da coluna no group by. */
+
 -- Quantidade de transações por produto
 
--- SELECT
---         IdProduto,
---         count(*)
--- FROM transacao_produto
--- GROUP BY IdProduto
+SELECT
+        IdProduto,
+        count(*)
+FROM transacao_produto
+GROUP BY IdProduto
 
 /* GROUP BY agrega informação para cada valor dentro da coluna no group by.
 
