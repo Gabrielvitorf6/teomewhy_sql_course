@@ -26,4 +26,5 @@ USING (idCliente)
 GROUP BY t1.idCliente, diasCadastrado 
 ORDER by 2 DESC;
 
--- O comando USING pode ser usado em JOINs quando as chaves em ambas as tabelas tem o mesmo nome. O USING tbm só retorna uma coluna no JOIN, invés de duplicar, melhorando a legibilidade do código e resultado da consulta
+-- O comando USING pode ser usado em JOINs quando as chaves em ambas as tabelas tem o mesmo nome. O USING tbm só retorna uma coluna no JOIN
+-- invés de duplicar, melhorando a legibilidade do código e resultado da consulta
