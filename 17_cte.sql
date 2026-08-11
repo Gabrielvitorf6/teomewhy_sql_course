@@ -14,6 +14,8 @@ WHERE t1.idCliente IN (
 )
 AND substr(t1.DtCriacao, 1, 10) = '2025-08-29';*/
 
+--código otimizado usando CTEs
+
 WITH tb_cliente_primeiro_dia AS (
 
         SELECT DISTINCT idCliente
