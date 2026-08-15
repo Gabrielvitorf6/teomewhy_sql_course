@@ -14,7 +14,7 @@ WHERE t1.idCliente IN (
 )
 AND substr(t1.DtCriacao, 1, 10) = '2025-08-29';*/
 
---código otimizado usando CTEs
+-- Código otimizado usando CTEs
 
 WITH tb_cliente_primeiro_dia AS (
 
@@ -50,5 +50,8 @@ tb_join AS (
 
 SELECT
        COUNT(idCliente_primeiro_dia) AS qtdeDiaUm,
-       COUNT(idCliente_ultimo_dia) AS qtdeUltimoDia
+       COUNT(idCliente_ultimo_dia) AS qtdeUltimoDia,
+       1. * COUNT(idCliente_ultimo_dia) / COUNT(idCliente_primeiro_dia) AS proporcao
 FROM tb_join
+
+-- 1. * multiplica o número por ele mesmo, e força o SQL a mostrar as casas decimais e não arredondar o número
